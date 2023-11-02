@@ -4,7 +4,7 @@
   </div>
 
   <div class="container mx-auto p-6">
-    <h2 class="text-2xl font-semibold mb-4">Consultar Tarjeta</h2>
+    <h2 class="text-2xl text-gray-600 font-semibold mb-4">Consultar Tarjeta</h2>
     <div class="mb-4">
       <label class="block text-left text-gray-600 font-bold mb-2" for="token">Ingresa token</label>
       <input v-model="token" type="text" id="token" name="token" class="w-full border rounded-md py-2 px-3" />

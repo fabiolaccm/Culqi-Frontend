@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-green-500 p-4 fixed top-0 left-0 right-0 z-10">
+  <nav class="navPurple p-4 fixed top-0 left-0 right-0 z-10">
     <div class="container mx-auto">
       <ul class="flex justify-center items-center">
         <li>
@@ -12,3 +12,11 @@
     </div>
   </nav>
 </template>
+
+
+<style>
+.navPurple {
+    --tw-bg-opacity: 1;
+    background-color: #763383;
+}
+ </style>

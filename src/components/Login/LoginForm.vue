@@ -2,7 +2,7 @@
   <div class="login-page">
     <div class="form">
       <form class="login-form" @submit.prevent="login">
-        <h2>¡Bienvenidos a Culqi!</h2>
+        <h2 style="color: #1f263e; font-family:Helvetica; font-size: 25px; font-weight: 400; font-weight:bold">¡Bienvenidos a Culqi!</h2>
         <input type="text" placeholder="Usuario" id="user" v-model="username" required />
         <input type="password" placeholder="Contraseña" id="password" v-model="password" required />
         <button type="submit">Ingresar</button>

@@ -62,7 +62,6 @@ export default {
     const isValidCardNumber = computed(() => {
       const cardNumberRegex = /^[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{1,4}$/;
       const result = cardNumberRegex.test(cardNumber.value);
-      console.log("isValidCardNumber: " + result);
       return result;
     });
 
@@ -100,6 +99,7 @@ export default {
         })
         .catch(error => {
           serverResponse.value = 'Error al procesar la solicitud.';
+          console.log("errors: " + error);
           if (error.response.data.errors) {
             const errors = error.response.data.errors
               .map(s => s.message)

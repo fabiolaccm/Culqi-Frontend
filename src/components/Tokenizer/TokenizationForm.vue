@@ -72,8 +72,8 @@
                 />
             </div>
             <div class="mb-4">
-              <button 
-                class="bg-green-500 text-white font-bold py-2 px-4 rounded-md w-full"
+              <button style="background-color:#763383"
+                class="bg-purple-600 text-white font-bold py-2 px-4 rounded-md w-full"
                 type="submit"
                 :disabled="isFormInvalid"
                  >Generar token</button>
@@ -81,7 +81,7 @@
 
             <div v-if="showResponse" class="mb-4">
                 <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded-md" role="alert">
-                    <label class="block text-gray-600 font-bold mb-2">Token:</label>
+                    <label class="block text-blue-600 font-bold mb-2">Token:</label>
                     <p>{{ serverResponse }}</p>
                 </div>
             </div>
@@ -101,3 +101,12 @@ export default {
   },
 };
 </script>
+
+<style>
+.bg-purple-600 {
+    --tw-bg-opacity: 1;
+    background-color: #763383;
+}
+
+
+  </style>

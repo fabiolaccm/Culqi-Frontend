@@ -7,7 +7,7 @@
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
-  <body class="login-body">
+  <body class="login-body" style="background-color: #0B0B0B;">
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
@@ -20,5 +20,12 @@
 <style>
 
   .login-body{background-image:url(https://culqi.com/assets/images/others/big/foco.svg);background-size:cover;height:"50";background-position: center;background-attachment:fixed;}
- 
+  .text-gray-600 {
+    --tw-text-opacity: 1;
+    color: #FFFFFF;
+  }
+  .bg-indigo-500 {
+    --tw-bg-opacity: 1;
+    background-color: #EB6F25;
+}
   </style>
